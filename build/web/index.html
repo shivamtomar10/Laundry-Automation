@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Laundry Management</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                text-align: center;
+                font-family: Arial, sans-serif;
+                margin-top: 100px;
+                background-color: #f2f2f2;
+            }
+            
+            .container {
+                display: flex;
+                justify-content: center;
+                gap: 50px;
+            }
+
+            .card {
+                background: white;
+                border-radius: 10px;
+                padding: 30px;
+                width: 250px;
+                text-align: center;
+                box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+                transition: transform 0.2s ease-in-out;
+            }
+
+            .card:hover {
+                transform: translateY(-5px);
+            }
+
+            .card img {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 15px;
+            }
+
+            .card h2 {
+                margin: 10px 0;
+                font-size: 22px;
+            }
+
+            .student h2 {
+                color: #0066ff;
+            }
+
+            .employee h2 {
+                color: #b8860b;
+            }
+
+            .btn {
+                display: inline-block;
+                margin-top: 15px;
+                padding: 10px 20px;
+                font-size: 16px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                text-decoration: none;
+                color: white;
+            }
+
+            .btn-student {
+                background-color: #0066ff;
+            }
+
+            .btn-employee {
+                background-color: #b8860b;
+            }
+
+            .btn:hover {
+                opacity: 0.9;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="text-align: center;">
+            <h1>Welcome to <span style="color: blue;">"VITLMS"</span></h1>
+            <h3>VIT Laundry Management System</h3>
+            <p style="font-style: italic; color: gray;">Simplifying Laundry Services for Students and Staff</p>
+        </div>
+        
+        <div class="container">
+        <!-- Student Card -->
+        <div class="card student">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135810.png" alt="Student Icon">
+            <h2>Student</h2>
+            <a href="studentLogin.jsp" class="btn btn-student">Login</a>
+        </div>
+
+        <!-- Employee Card -->
+        <div class="card employee">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Employee Icon">
+            <h2>Employee</h2>
+            <a href="employeeLogin.jsp" class="btn btn-employee">Login</a>
+        </div>
+    </div>
+
+    </body>
+</html>
